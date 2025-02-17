@@ -1,7 +1,7 @@
-package org.gluu.agama.smtp;
+package org.gluu.agama.jans;
 
-import org.gluu.agama.smtp.jans.service.JansEmailService;
-import org.gluu.agama.smtp.jans.model.ContextData;
+import org.gluu.agama.jans.service.JansEmailService;
+import org.gluu.agama.jans.model.ContextData;
 
 public abstract class EmailService {
 
