@@ -6,3 +6,5 @@ emailObj = {errorMessage: ""}
 max = Repeat 3 times max
      // Retrieve user email address from UI
      uiInput = RRF "main.ftlh" emailObj
+     // Assign user email input to a variable
+     email = uiInput.email
