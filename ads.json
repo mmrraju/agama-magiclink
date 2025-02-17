@@ -1,1 +1,20 @@
-{}
+{
+    "agama-magiclink": {
+        "projectName": "agama-magiclink",
+        "description": "Agama Project to authenticate a person by generating a Magic Link",
+        "type": "community",
+        "author": "mmrraju",
+        "version": "0.0.1",
+        "authorWebsite": "https://github.com/mmrraju/agama-magiclink",
+        "githubUri": "https://github.com/mmrraju/agama-magiclink",
+        "license": "apache-2.0",
+        "lastUpdated": "1739810595582",
+        "tags": [
+            "jans",
+            "authentication",
+            "community"
+        ],
+        "noDirectLaunch": [],
+        "configs": {}
+    }
+}
