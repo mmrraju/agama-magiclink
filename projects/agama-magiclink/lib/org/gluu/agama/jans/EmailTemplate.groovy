@@ -1,8 +1,8 @@
-package org.gluu.agama.smtp;
+package org.gluu.agama.jans;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;
-import org.gluu.agama.smtp.jans.model.ContextData;
+import org.gluu.agama.jans.model.ContextData;
 
 class EmailTemplate {
     
