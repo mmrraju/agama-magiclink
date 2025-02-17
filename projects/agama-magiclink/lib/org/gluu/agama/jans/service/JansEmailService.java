@@ -17,9 +17,9 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-import org.gluu.agama.smtp.EmailService;
-import org.gluu.agama.smtp.EmailTemplate;
-import org.gluu.agama.smtp.jans.model.ContextData;
+import org.gluu.agama.jans.EmailService;
+import org.gluu.agama.jans.EmailTemplate;
+import org.gluu.agama.jans.model.ContextData;
 import static org.gluu.agama.smtp.jans.Attrs.*;
 
 public class JansEmailService extends EmailService {
