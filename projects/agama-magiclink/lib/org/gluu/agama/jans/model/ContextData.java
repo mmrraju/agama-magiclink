@@ -1,4 +1,4 @@
-package org.gluu.agama.smtp.jans.model;
+package org.gluu.agama.jans.model;
 
 public class ContextData {
     
