@@ -1,36 +1,211 @@
 {
-  "nodes": [
-    {
-      "id": "startNode-cc528df4-9d20-4e0d-a39d-fc5b83449d7e",
-      "type": "startNode",
-      "sourcePosition": "right",
-      "position": {
-        "x": 30,
-        "y": 30
-      },
-      "deletable": false,
-      "data": {
-        "id": "startNode-cc528df4-9d20-4e0d-a39d-fc5b83449d7e",
-        "type": "startNode",
-        "position": {
-          "x": 30,
-          "y": 40
-        },
-        "agamaData": {
-          "isTopLevelFlow": true,
-          "basepath": "",
-          "configParams": "{}",
-          "nodeIcon": "material-symbols:line-start-square",
-          "timeout": "",
-          "inputs": "",
-          "configs": "",
-          "flowname": "org.gluu.agama.magiclink",
-          "displayName": "org.gluu.agama.magiclink",
-          "creationDate": "17/02/2025",
-          "hasComment": true,
-          "comment": ""
-        }
-      }
-    }
-  ]
+	"nodes": [
+		{
+			"id": "startNode-cc528df4-9d20-4e0d-a39d-fc5b83449d7e",
+			"type": "startNode",
+			"sourcePosition": "right",
+			"position": {
+				"x": 30,
+				"y": 30
+			},
+			"deletable": false,
+			"data": {
+				"id": "startNode-cc528df4-9d20-4e0d-a39d-fc5b83449d7e",
+				"type": "startNode",
+				"position": {
+					"x": 30,
+					"y": 40
+				},
+				"agamaData": {
+					"isTopLevelFlow": true,
+					"basepath": "",
+					"configParams": "{}",
+					"nodeIcon": "material-symbols:line-start-square",
+					"timeout": "",
+					"inputs": "",
+					"configs": "",
+					"flowname": "org.gluu.agama.magiclink",
+					"displayName": "org.gluu.agama.magiclink",
+					"creationDate": "17/02/2025",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			}
+		},
+		{
+			"id": "assignmentNode-1b70c468-dbe3-4fa8-b30b-10a8f623e684",
+			"type": "assignmentNode",
+			"position": {
+				"x": 280,
+				"y": 30
+			},
+			"data": {
+				"id": "assignmentNode-1b70c468-dbe3-4fa8-b30b-10a8f623e684",
+				"type": "assignmentNode",
+				"position": {
+					"x": 280,
+					"y": 30
+				},
+				"previousNodeId": "startNode-cc528df4-9d20-4e0d-a39d-fc5b83449d7e",
+				"agamaData": {
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "{errorMessage: \"\"}",
+							"assignedVariableName": "emailObj"
+						}
+					],
+					"nodeIcon": "material-symbols:equal",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Create and initialize variable to receive email input"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			},
+			"selected": false
+		},
+		{
+			"id": "repeatNode-9f217e9b-d771-46ed-baa4-22743775fa40",
+			"type": "repeatNode",
+			"position": {
+				"x": 530,
+				"y": 30
+			},
+			"data": {
+				"id": "repeatNode-9f217e9b-d771-46ed-baa4-22743775fa40",
+				"type": "repeatNode",
+				"position": {
+					"x": 530,
+					"y": 30
+				},
+				"previousNodeId": "assignmentNode-1b70c468-dbe3-4fa8-b30b-10a8f623e684",
+				"agamaData": {
+					"nodeIcon": "material-symbols:event-repeat-outline-rounded",
+					"maxIteration": "3",
+					"maxIterationVariableName": "max",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Iterate x times max"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			},
+			"selected": false
+		},
+		{
+			"id": "rrfNode-044aa181-c37b-403a-8a3c-08e6d6132ec7",
+			"type": "rrfNode",
+			"position": {
+				"x": 780,
+				"y": 280
+			},
+			"data": {
+				"id": "rrfNode-044aa181-c37b-403a-8a3c-08e6d6132ec7",
+				"type": "rrfNode",
+				"position": {
+					"x": 780,
+					"y": 280
+				},
+				"previousNodeId": "repeatNode-9f217e9b-d771-46ed-baa4-22743775fa40",
+				"branching": "repeat",
+				"agamaData": {
+					"assignments": [],
+					"nodeIcon": "ph:globe-simple",
+					"templatePath": "main.ftlh",
+					"asssignedVariableName": "uiInput",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Retrieve user email address from UI",
+					"arguments": "emailObj"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			},
+			"selected": true
+		}
+	],
+	"edges": [
+		{
+			"id": "startNode-cc528df4-9d20-4e0d-a39d-fc5b83449d7e-assignmentNode-1b70c468-dbe3-4fa8-b30b-10a8f623e684",
+			"type": "default",
+			"source": "startNode-cc528df4-9d20-4e0d-a39d-fc5b83449d7e",
+			"target": "assignmentNode-1b70c468-dbe3-4fa8-b30b-10a8f623e684",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_startNode-cc528df4-9d20-4e0d-a39d-fc5b83449d7e"
+		},
+		{
+			"id": "assignmentNode-1b70c468-dbe3-4fa8-b30b-10a8f623e684-repeatNode-9f217e9b-d771-46ed-baa4-22743775fa40",
+			"type": "default",
+			"source": "assignmentNode-1b70c468-dbe3-4fa8-b30b-10a8f623e684",
+			"target": "repeatNode-9f217e9b-d771-46ed-baa4-22743775fa40",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_assignmentNode-1b70c468-dbe3-4fa8-b30b-10a8f623e684"
+		},
+		{
+			"id": "repeatNode-9f217e9b-d771-46ed-baa4-22743775fa40-rrfNode-044aa181-c37b-403a-8a3c-08e6d6132ec7",
+			"type": "default",
+			"source": "repeatNode-9f217e9b-d771-46ed-baa4-22743775fa40",
+			"target": "rrfNode-044aa181-c37b-403a-8a3c-08e6d6132ec7",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "repeat",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_repeatNode-9f217e9b-d771-46ed-baa4-22743775fa40_repeat"
+		}
+	],
+	"viewport": {
+		"x": -530,
+		"y": -11,
+		"zoom": 1
+	}
 }
