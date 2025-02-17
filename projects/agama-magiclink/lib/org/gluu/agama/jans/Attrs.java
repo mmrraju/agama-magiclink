@@ -1,4 +1,4 @@
-package org.gluu.agama.smtp.jans;
+package org.gluu.agama.jans;
 
 public final class Attrs {
    public static final String UID = "uid";
