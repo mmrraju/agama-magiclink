@@ -1,4 +1,4 @@
-package org.gluu.agama.smtp.jans.service;
+package org.gluu.agama.jans.service;
 
 import io.jans.as.common.model.common.User;
 import io.jans.as.common.service.common.EncryptionService;
