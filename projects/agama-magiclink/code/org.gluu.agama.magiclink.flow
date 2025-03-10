@@ -15,3 +15,4 @@ Repeat 3 times max
      // 1. Logic to determine if user email is already registered 2. Initialize location, timezone info from UI to user-data
      emailUnknown = userData.empty
      userData.context = { location: uiInput.location, timeZone: uiInput.zone, device: uiInput.device }
+     When emailUnknown is not true
