@@ -105,7 +105,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "rrfNode-044aa181-c37b-403a-8a3c-08e6d6132ec7",
@@ -261,8 +261,8 @@
 		}
 	],
 	"viewport": {
-		"x": 56,
-		"y": 32,
+		"x": 0,
+		"y": 0,
 		"zoom": 1
 	}
 }
