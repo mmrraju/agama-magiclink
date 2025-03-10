@@ -217,6 +217,46 @@
 				"width": 170,
 				"height": 124
 			},
+			"selected": false
+		},
+		{
+			"id": "callNode-c490a50a-e973-47b6-b3bc-3d87f28dde38",
+			"type": "callNode",
+			"position": {
+				"x": 1530,
+				"y": 280
+			},
+			"data": {
+				"id": "callNode-c490a50a-e973-47b6-b3bc-3d87f28dde38",
+				"type": "callNode",
+				"position": {
+					"x": 1530,
+					"y": 280
+				},
+				"previousNodeId": "callNode-ea45012a-c7a5-4dc1-b895-b3955b824078",
+				"agamaData": {
+					"javaClassName": "",
+					"javaMethodName": "getUserEntity",
+					"javaVariableName": "magicLinkService",
+					"exceptionVariableField": "",
+					"callType": "Call method on instance",
+					"arguments": [
+						"email"
+					],
+					"nodeIcon": "material-symbols:code",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "User details using magic link service",
+					"asssignedVariableName": "userData"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			},
 			"selected": true
 		}
 	],
@@ -315,11 +355,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_assignmentNode-83bc7cc2-176d-4d5c-8a34-8cd3fc103bdd"
+		},
+		{
+			"id": "callNode-ea45012a-c7a5-4dc1-b895-b3955b824078-callNode-c490a50a-e973-47b6-b3bc-3d87f28dde38",
+			"type": "default",
+			"source": "callNode-ea45012a-c7a5-4dc1-b895-b3955b824078",
+			"target": "callNode-c490a50a-e973-47b6-b3bc-3d87f28dde38",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_callNode-ea45012a-c7a5-4dc1-b895-b3955b824078"
 		}
 	],
 	"viewport": {
-		"x": -850,
-		"y": -18,
+		"x": -917,
+		"y": 0,
 		"zoom": 1
 	}
 }
