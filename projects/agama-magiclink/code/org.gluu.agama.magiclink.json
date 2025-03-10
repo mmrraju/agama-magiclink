@@ -249,8 +249,51 @@
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": "User details using magic link service",
+					"comment": "Get user details using magic link service",
 					"asssignedVariableName": "userData"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			},
+			"selected": false
+		},
+		{
+			"id": "assignmentNode-3ab97777-6674-43ab-9c84-25fc120d53d9",
+			"type": "assignmentNode",
+			"position": {
+				"x": 1780,
+				"y": 280
+			},
+			"data": {
+				"id": "assignmentNode-3ab97777-6674-43ab-9c84-25fc120d53d9",
+				"type": "assignmentNode",
+				"position": {
+					"x": 1780,
+					"y": 280
+				},
+				"previousNodeId": "callNode-c490a50a-e973-47b6-b3bc-3d87f28dde38",
+				"agamaData": {
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "userData.empty",
+							"assignedVariableName": "emailUnknown"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "{ location: uiInput.location, timeZone: uiInput.zone, device: uiInput.device }",
+							"assignedVariableName": "userData.context"
+						}
+					],
+					"nodeIcon": "material-symbols:equal",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "1. Logic to determine if user email is already registered 2. Initialize location, timezone info from UI to user-data"
 				}
 			},
 			"measured": {
@@ -374,11 +417,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_callNode-ea45012a-c7a5-4dc1-b895-b3955b824078"
+		},
+		{
+			"id": "callNode-c490a50a-e973-47b6-b3bc-3d87f28dde38-assignmentNode-3ab97777-6674-43ab-9c84-25fc120d53d9",
+			"type": "default",
+			"source": "callNode-c490a50a-e973-47b6-b3bc-3d87f28dde38",
+			"target": "assignmentNode-3ab97777-6674-43ab-9c84-25fc120d53d9",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_callNode-c490a50a-e973-47b6-b3bc-3d87f28dde38"
 		}
 	],
 	"viewport": {
-		"x": -917,
-		"y": 0,
+		"x": -1175,
+		"y": -32,
 		"zoom": 1
 	}
 }
