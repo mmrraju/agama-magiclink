@@ -18,3 +18,5 @@ Repeat 3 times max
      When emailUnknown is not true
           // User with same email already exists
           Log "@info User with e-mail % is known" email
+          // Call magic link service to send mail
+          token = Call magicLinkService sendMail email
