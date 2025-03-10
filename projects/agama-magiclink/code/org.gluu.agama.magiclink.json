@@ -376,6 +376,46 @@
 				"width": 170,
 				"height": 124
 			},
+			"selected": false
+		},
+		{
+			"id": "callNode-32100d59-50bf-4756-a38d-9b43aaa733aa",
+			"type": "callNode",
+			"position": {
+				"x": 2530,
+				"y": 480
+			},
+			"data": {
+				"id": "callNode-32100d59-50bf-4756-a38d-9b43aaa733aa",
+				"type": "callNode",
+				"position": {
+					"x": 2530,
+					"y": 480
+				},
+				"previousNodeId": "logNode-99a5c46d-4af1-4dbc-9001-651654a38bea",
+				"agamaData": {
+					"javaClassName": "",
+					"javaMethodName": "sendMail",
+					"javaVariableName": "magicLinkService",
+					"exceptionVariableField": "",
+					"callType": "Call method on instance",
+					"arguments": [
+						"email"
+					],
+					"nodeIcon": "material-symbols:code",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Call magic link service to send mail",
+					"asssignedVariableName": "token"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			},
 			"selected": true
 		}
 	],
@@ -550,11 +590,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_whenNode-a2d0130b-8d2c-4d5b-affd-c95d32528803_success"
+		},
+		{
+			"id": "logNode-99a5c46d-4af1-4dbc-9001-651654a38bea-callNode-32100d59-50bf-4756-a38d-9b43aaa733aa",
+			"type": "default",
+			"source": "logNode-99a5c46d-4af1-4dbc-9001-651654a38bea",
+			"target": "callNode-32100d59-50bf-4756-a38d-9b43aaa733aa",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_logNode-99a5c46d-4af1-4dbc-9001-651654a38bea"
 		}
 	],
 	"viewport": {
-		"x": -1570,
-		"y": 17,
+		"x": -1959,
+		"y": -50,
 		"zoom": 1
 	}
 }
