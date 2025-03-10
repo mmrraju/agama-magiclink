@@ -20,7 +20,6 @@ import com.nimbusds.jose.*;
 import com.nimbusds.jose.crypto.*;
 import com.nimbusds.jwt.*;
 
-import org.gluu.agama.jans.EmailService;
 import org.gluu.agama.jans.EmailTemplate;
 import org.gluu.agama.jans.MagicLinkService;
 import org.gluu.agama.jans.model.ContextData;
