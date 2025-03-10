@@ -10,3 +10,5 @@ Repeat 3 times max
      email = uiInput.email
      // Create an instance of MagicLinkService
      magicLinkService = Call org.gluu.agama.jans.MagicLinkService#getInstance 
+     // User details using magic link service
+     userData = Call magicLinkService getUserEntity email
