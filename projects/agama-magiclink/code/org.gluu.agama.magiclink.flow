@@ -3,7 +3,7 @@ Flow org.gluu.agama.magiclink
 // Create and initialize variable to receive email input
 emailObj = {errorMessage: ""}
 // Iterate x times max
-max = Repeat 3 times max
+Repeat 3 times max
      // Retrieve user email address from UI
      uiInput = RRF "main.ftlh" emailObj
      // Assign user email input to a variable
