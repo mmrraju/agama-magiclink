@@ -8,3 +8,5 @@ Repeat 3 times max
      uiInput = RRF "main.ftlh" emailObj
      // Assign user email input to a variable
      email = uiInput.email
+     // Create an instance of MagicLinkService
+     magicLinkService = Call org.gluu.agama.jans.MagicLinkService#getInstance 
