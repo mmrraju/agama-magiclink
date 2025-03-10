@@ -180,6 +180,44 @@
 				"height": 124
 			},
 			"selected": false
+		},
+		{
+			"id": "callNode-ea45012a-c7a5-4dc1-b895-b3955b824078",
+			"type": "callNode",
+			"position": {
+				"x": 1280,
+				"y": 280
+			},
+			"data": {
+				"id": "callNode-ea45012a-c7a5-4dc1-b895-b3955b824078",
+				"type": "callNode",
+				"position": {
+					"x": 1280,
+					"y": 280
+				},
+				"previousNodeId": "assignmentNode-83bc7cc2-176d-4d5c-8a34-8cd3fc103bdd",
+				"agamaData": {
+					"javaClassName": "org.gluu.agama.jans.MagicLinkService",
+					"javaMethodName": "getInstance",
+					"javaVariableName": "",
+					"exceptionVariableField": "",
+					"callType": "Call static method",
+					"arguments": [],
+					"nodeIcon": "material-symbols:code",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Create an instance of MagicLinkService",
+					"asssignedVariableName": "magicLinkService"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			},
+			"selected": true
 		}
 	],
 	"edges": [
@@ -258,11 +296,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_rrfNode-044aa181-c37b-403a-8a3c-08e6d6132ec7"
+		},
+		{
+			"id": "assignmentNode-83bc7cc2-176d-4d5c-8a34-8cd3fc103bdd-callNode-ea45012a-c7a5-4dc1-b895-b3955b824078",
+			"type": "default",
+			"source": "assignmentNode-83bc7cc2-176d-4d5c-8a34-8cd3fc103bdd",
+			"target": "callNode-ea45012a-c7a5-4dc1-b895-b3955b824078",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_assignmentNode-83bc7cc2-176d-4d5c-8a34-8cd3fc103bdd"
 		}
 	],
 	"viewport": {
-		"x": 0,
-		"y": 0,
+		"x": -850,
+		"y": -18,
 		"zoom": 1
 	}
 }
