@@ -16,3 +16,5 @@ Repeat 3 times max
      emailUnknown = userData.empty
      userData.context = { location: uiInput.location, timeZone: uiInput.zone, device: uiInput.device }
      When emailUnknown is not true
+          // User with same email already exists
+          Log "@info User with e-mail % is known" email
