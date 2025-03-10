@@ -10,5 +10,8 @@ Repeat 3 times max
      email = uiInput.email
      // Create an instance of MagicLinkService
      magicLinkService = Call org.gluu.agama.jans.MagicLinkService#getInstance 
-     // User details using magic link service
+     // Get user details using magic link service
      userData = Call magicLinkService getUserEntity email
+     // 1. Logic to determine if user email is already registered 2. Initialize location, timezone info from UI to user-data
+     emailUnknown = userData.empty
+     userData.context = { location: uiInput.location, timeZone: uiInput.zone, device: uiInput.device }
