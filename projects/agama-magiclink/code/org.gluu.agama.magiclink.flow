@@ -25,4 +25,4 @@ Repeat 3 times max
      // Call magic link service to send mail
      token = Call magicLinkService sendMail email userData.context
      //  Magic link has been sent
-     Log "@info Mail has been sent with token %" token
+     Log "@debug Mail has been sent with token %" token
