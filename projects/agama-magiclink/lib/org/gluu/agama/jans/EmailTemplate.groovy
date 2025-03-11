@@ -8,7 +8,7 @@ class EmailTemplate {
     
     private static DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMMM dd, YYYY, HH:mma (O)");
 
-    static String get(String otp, ContextData context) {
+    static String get(String magicLink, ContextData context) {
 
         """
 <div style="width: 640px; font-size: 18px; font-family: 'Roboto', sans-serif; font-weight: 300">
@@ -19,11 +19,11 @@ class EmailTemplate {
         <p>
         <b>Hi,</b>
         <br><br>
-        Enter the 6-digit code below to verify your email address at gluu.org
+        Clink on the link to verfy and access to the IDP.
         </p>
         <div style="display: flex; justify-content: center">
-            <div style="background-color: #b6f6da; color: #0ca65d; font-size: 40px; font-weight: 400; letter-spacing: 6px" align="center">
-                ${otp}
+            <div style="background-color: #b6f6da; color: #0ca65d; font-size: 14px; font-weight: 400; letter-spacing: 6px" align="center">
+                ${magicLink}
             </div>
         </div>
         <p style="font-size: 14px">
