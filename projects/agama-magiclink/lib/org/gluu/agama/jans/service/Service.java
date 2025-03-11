@@ -27,7 +27,7 @@ import static org.gluu.agama.smtp.jans.Attrs.*;
 
 public class Service extends MagicLinkService{
 
-    private static final Logger logger = LoggerFactory.getLogger(JansEmailService.class);
+    private static final Logger logger = LoggerFactory.getLogger(MagicLinkService.class);
 
     private static final String MAIL = "mail";
     private static final String UID = "uid";
