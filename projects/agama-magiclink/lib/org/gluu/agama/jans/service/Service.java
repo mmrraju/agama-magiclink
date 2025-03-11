@@ -148,4 +148,9 @@ public class Service extends MagicLinkService{
 
     }    
 
+    private static User getUser(String attributeName, String value) {
+        UserService userService = CdiUtil.bean(UserService.class);
+        return userService.getUserByAttribute(attributeName, value, true);
+    }    
+
 }
