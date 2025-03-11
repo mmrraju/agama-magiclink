@@ -1,7 +1,7 @@
 [#ftl output_format="HTML"]
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Welcome
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Mail Sent Success
 	</title></head>
 <body>
 
@@ -15,12 +15,12 @@
 	  <div class="flex">
 		<img src="https://gluu.org/wp-content/uploads/2020/12/logo.png" id="inh1m">
 	  </div>
-	  <h1>WELCOME
+	  <h1>Mail Sent Success
 	  </h1>
 	  <div class="separator">
 	  </div>
 	  <p class="message">
-		You've successfully Registered on Jansen!!!
+		Please check your mail to complete your user authentication.
 		<br>
 	  </p>
 	  <form method="post" id="myForm" class="my-8">
