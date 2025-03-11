@@ -400,7 +400,8 @@
 					"exceptionVariableField": "",
 					"callType": "Call method on instance",
 					"arguments": [
-						"email"
+						"email",
+						"userData.context"
 					],
 					"nodeIcon": "material-symbols:code",
 					"nodeColor": "",
@@ -416,7 +417,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "logNode-0f19e0d2-9c86-43e9-b295-2a9a8b247883",
@@ -449,7 +450,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		}
 	],
 	"edges": [
