@@ -489,6 +489,44 @@
 				"width": 170,
 				"height": 124
 			},
+			"selected": false
+		},
+		{
+			"id": "assignmentNode-22e422ef-0654-48a7-94fc-271040034145",
+			"type": "assignmentNode",
+			"position": {
+				"x": 2530,
+				"y": 480
+			},
+			"data": {
+				"id": "assignmentNode-22e422ef-0654-48a7-94fc-271040034145",
+				"type": "assignmentNode",
+				"position": {
+					"x": 2530,
+					"y": 480
+				},
+				"previousNodeId": "logNode-a5b1ecbd-e5d4-4f55-bc4c-d901edeaa831",
+				"agamaData": {
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"User Not found\"",
+							"assignedVariableName": "emailObje.errorMessage"
+						}
+					],
+					"nodeIcon": "material-symbols:equal",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Error message user not found"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			},
 			"selected": true
 		}
 	],
@@ -719,11 +757,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_whenNode-a2d0130b-8d2c-4d5b-affd-c95d32528803_success"
+		},
+		{
+			"id": "logNode-a5b1ecbd-e5d4-4f55-bc4c-d901edeaa831-assignmentNode-22e422ef-0654-48a7-94fc-271040034145",
+			"type": "default",
+			"source": "logNode-a5b1ecbd-e5d4-4f55-bc4c-d901edeaa831",
+			"target": "assignmentNode-22e422ef-0654-48a7-94fc-271040034145",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_logNode-a5b1ecbd-e5d4-4f55-bc4c-d901edeaa831"
 		}
 	],
 	"viewport": {
-		"x": -1686,
-		"y": -1,
+		"x": -1930,
+		"y": -8,
 		"zoom": 1
 	}
 }
