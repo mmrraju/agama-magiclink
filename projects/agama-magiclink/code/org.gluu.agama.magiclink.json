@@ -416,6 +416,39 @@
 				"width": 170,
 				"height": 124
 			},
+			"selected": false
+		},
+		{
+			"id": "logNode-0f19e0d2-9c86-43e9-b295-2a9a8b247883",
+			"type": "logNode",
+			"position": {
+				"x": 2780,
+				"y": 480
+			},
+			"data": {
+				"id": "logNode-0f19e0d2-9c86-43e9-b295-2a9a8b247883",
+				"type": "logNode",
+				"position": {
+					"x": 2780,
+					"y": 480
+				},
+				"previousNodeId": "callNode-32100d59-50bf-4756-a38d-9b43aaa733aa",
+				"agamaData": {
+					"logMessage": "\"Mail has been sent with token %\" token",
+					"logLevel": "info",
+					"nodeIcon": "octicon:log-16",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": " Magic link has been sent"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			},
 			"selected": true
 		}
 	],
@@ -609,11 +642,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_logNode-99a5c46d-4af1-4dbc-9001-651654a38bea"
+		},
+		{
+			"id": "callNode-32100d59-50bf-4756-a38d-9b43aaa733aa-logNode-0f19e0d2-9c86-43e9-b295-2a9a8b247883",
+			"type": "default",
+			"source": "callNode-32100d59-50bf-4756-a38d-9b43aaa733aa",
+			"target": "logNode-0f19e0d2-9c86-43e9-b295-2a9a8b247883",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_callNode-32100d59-50bf-4756-a38d-9b43aaa733aa"
 		}
 	],
 	"viewport": {
-		"x": -1683,
-		"y": -49,
+		"x": -1775,
+		"y": -140,
 		"zoom": 1
 	}
 }
