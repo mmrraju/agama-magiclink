@@ -29,6 +29,7 @@ public class Service extends MagicLinkService{
 
     private static final Logger logger = LoggerFactory.getLogger(MagicLinkService.class);
 
+    private static final String HOST = "https://mmrraju-set-werewolf.gluu.info/";
     private static final String MAIL = "mail";
     private static final String UID = "uid";
     private static final String DISPLAY_NAME = "displayName";
@@ -55,8 +56,23 @@ public class Service extends MagicLinkService{
 
     public String generateMagicLink(String token) throws Exception {
 
-        return "https://your-app.com/auth/magic-link?token=" + token;
+        return HOST + "auth/magic-link?token=" + token;
     }
+
+    public boolean verifyMagicLink(String token) {
+        try {
+            SignedJWT signedJWT = SignedJWT.parse(token);
+            JWSVerifier verifier = new MACVerifier(SECRET_KEY.getBytes());
+
+            if (signedJWT.verify(verifier)) {
+                Date expirationTime = signedJWT.getJWTClaimsSet().getExpirationTime();
+                return expirationTime != null && expirationTime.after(new Date());
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return false;
+    }    
 
     public String generateToken(String email){
         long expirationTime = System.currentTimeMillis() + (10 * 60 * 1000); // 10 minutes expiry
