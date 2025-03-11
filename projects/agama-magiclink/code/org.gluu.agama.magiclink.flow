@@ -15,10 +15,12 @@ Repeat 3 times max
      // 1. Logic to determine if user email is already registered 2. Initialize location, timezone info from UI to user-data
      emailUnknown = userData.empty
      userData.context = { location: uiInput.location, timeZone: uiInput.zone, device: uiInput.device }
-     When emailUnknown is not true
-          // User with same email already exists
-          Log "@info User with e-mail % is known" email
-          // Call magic link service to send mail
-          token = Call magicLinkService sendMail email userData.context
-          //  Magic link has been sent
-          Log "@info Mail has been sent with token %" token
+     When emailUnknown is true
+          // User not found 
+          Log "@info User not found with mail %" email
+     // User with same email already exists
+     Log "@info User with e-mail % is known" email
+     // Call magic link service to send mail
+     token = Call magicLinkService sendMail email userData.context
+     //  Magic link has been sent
+     Log "@info Mail has been sent with token %" token
