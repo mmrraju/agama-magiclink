@@ -5,7 +5,7 @@ emailObj = {errorMessage: ""}
 // Iterate x times max
 Repeat 3 times max
      // Retrieve user email address from UI
-     uiInput = RRF "main.ftlh" emailObj
+     uiInput = RRF "mailform.ftlh" emailObj
      // Assign user email input to a variable
      email = uiInput.email
      // Create an instance of MagicLinkService
