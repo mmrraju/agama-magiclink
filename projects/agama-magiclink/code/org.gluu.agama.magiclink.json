@@ -143,7 +143,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "assignmentNode-83bc7cc2-176d-4d5c-8a34-8cd3fc103bdd",
@@ -164,7 +164,7 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "uiInput.email",
+							"assignmentExpression": "uiInput.mail",
 							"assignedVariableName": "email"
 						}
 					],
@@ -181,7 +181,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "callNode-ea45012a-c7a5-4dc1-b895-b3955b824078",
@@ -667,8 +667,8 @@
 		}
 	],
 	"viewport": {
-		"x": -294,
-		"y": 218,
+		"x": -518,
+		"y": 48,
 		"zoom": 1
 	}
 }
