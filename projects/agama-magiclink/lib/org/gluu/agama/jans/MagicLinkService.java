@@ -10,6 +10,8 @@ public abstract class MagicLinkService {
 
     public abstract String sendMail(String to, ContextData context);
 
+    public abstract boolean verifyMagicLink(String token);
+
     public static MagicLinkService getInstance(){
         return Service.getInstance();
     }
