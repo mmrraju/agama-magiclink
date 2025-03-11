@@ -23,6 +23,10 @@
 		  <p class="leading-normal">Enter your E-mail
 		  </p>
 		</div>
+		[#if errorMessage?has_content]
+			<div id="ig86l" align="center" class="fs-6 text-red-600 mb-4">${errorMessage}
+			</div>
+		[/#if]
 		<form method="post" class="my-8">
 		  <div class="relative mb-2">
 			<label for="mail" class="label mt-2 ml-1 leading-tighter text-gray-600 text-base cursor-text">
