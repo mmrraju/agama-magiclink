@@ -511,7 +511,7 @@
 						{
 							"variableTypeCheck": true,
 							"assignmentExpression": "\"User Not found\"",
-							"assignedVariableName": "emailObje.errorMessage"
+							"assignedVariableName": "emailObj.errorMessage"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
