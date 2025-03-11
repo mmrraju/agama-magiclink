@@ -15,7 +15,7 @@
 	  <div class="flex">
 		<img src="https://gluu.org/wp-content/uploads/2020/12/logo.png" id="inh1m">
 	  </div>
-	  <h1>Mail Sent Success
+	  <h1>Mail Sent Successfully
 	  </h1>
 	  <div class="separator">
 	  </div>
