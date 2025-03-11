@@ -19,7 +19,7 @@ Repeat 3 times max
           // User not found 
           Log "@info User not found with mail %" email
           // Error message user not found
-          emailObje.errorMessage = "User Not found"
+          emailObj.errorMessage = "User Not found"
      // User with same email already exists
      Log "@info User with e-mail % is known" email
      // Call magic link service to send mail
