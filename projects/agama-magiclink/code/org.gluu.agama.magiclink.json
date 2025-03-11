@@ -126,7 +126,7 @@
 				"agamaData": {
 					"assignments": [],
 					"nodeIcon": "ph:globe-simple",
-					"templatePath": "main.ftlh",
+					"templatePath": "mailform.ftlh",
 					"asssignedVariableName": "uiInput",
 					"nodeColor": "",
 					"titleColor": "",
@@ -134,14 +134,16 @@
 					"displayName": "",
 					"hasComment": true,
 					"comment": "Retrieve user email address from UI",
-					"arguments": "emailObj"
+					"arguments": [
+						"emailObj"
+					]
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "assignmentNode-83bc7cc2-176d-4d5c-8a34-8cd3fc103bdd",
@@ -417,7 +419,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "logNode-0f19e0d2-9c86-43e9-b295-2a9a8b247883",
@@ -665,8 +667,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1775,
-		"y": -140,
+		"x": -294,
+		"y": 218,
 		"zoom": 1
 	}
 }
