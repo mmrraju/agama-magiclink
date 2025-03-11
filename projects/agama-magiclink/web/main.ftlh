@@ -24,7 +24,7 @@
 		  </p>
 		</div>
 		[#if errorMessage?has_content]
-		<div id="ig86l" class="fs-6 text-red-600 mb-4" align="center">${errorMessage}
+		<div id="ig86l" align="center" class="fs-6 text-red-600 mb-4">${errorMessage}
 		</div>
 		[/#if]
 		<form method="post" enctype="application/x-www-form-urlencoded" class="my-8">
@@ -32,13 +32,13 @@
 		  <input type="hidden" name="device" id="device" value="">
 		  <input type="hidden" name="zone" id="zone" value="">
 		  <div class="relative mb-2">
-			<label for="code" data-i18n="main.email_address" class="label mt-2 ml-1 leading-tighter text-gray-600 text-base cursor-text">
+			<label for="code" data-i18n="main.email_address" class="label mt-2 ml-1 leading-tighter text-gray-600 text-base cursor-text" value="Enter your mail">
 			</label>
 			<input type="email" id="email" name="email" autofocus="" placeholder="name@example.com" value="${email!}" required="" class="w-full rounded px-3 border border-gray-300 pt-2 pb-2">
 		  </div>
 		  <div class="space-y-9">
 			<div class="text-sm flex justify-between items-center">
-			  <button type="submit" data-i18n="main.continue" class="py-2 px-6 rounded text-white btn bg-green-500 hover:bg-green-600">
+			  <button type="submit" data-i18n="main.continue" class="py-2 px-6 rounded text-white btn bg-green-500 hover:bg-green-600" value="Continue">
 			  </button>
 			</div>
 		  </div>
