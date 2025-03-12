@@ -26,3 +26,5 @@ Repeat 3 times max
      token = Call magicLinkService sendMail email userData.context
      //  Magic link has been sent
      Log "@debug Mail has been sent with token %" token
+     // Mail Sending acknowledgement
+     acknowledgement = RRF "acknowledgement.ftlh" 
