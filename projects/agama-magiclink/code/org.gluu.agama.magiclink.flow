@@ -27,4 +27,4 @@ Repeat 3 times max
      //  Magic link has been sent
      Log "@debug Mail has been sent with token %" token
      // Mail Sending acknowledgement
-     acknowledgement = RRF "acknowledgement.ftlh" 
+     acknowledgement = RRF "acknowledgement.ftlh" emailObj
