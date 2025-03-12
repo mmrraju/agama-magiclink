@@ -554,7 +554,8 @@
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": "Mail Sending acknowledgement"
+					"comment": "Mail Sending acknowledgement",
+					"arguments": "emailObj"
 				}
 			},
 			"measured": {
@@ -832,8 +833,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2271,
-		"y": 8,
+		"x": -2437,
+		"y": -52,
 		"zoom": 1
 	}
 }
