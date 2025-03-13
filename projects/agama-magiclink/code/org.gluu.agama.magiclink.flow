@@ -23,14 +23,12 @@ Repeat 3 times max
      // User with same email already exists
      Log "@info User with e-mail % is known" email
      // Call magic link service to send mail
-     token | E = Call magicLinkService sendMail email userData.context
-     // if no error
-     When email is null
-          //  Magic link has been sent
-          Log "@debug Mail has been sent with token %" token
-          // Mail Sending acknowledgement
-          acknowledgement = RRF "acknowledgement.ftlh" emailObj
-          // Fetch token
-          fetchToken = httpRequest.params.token
-          // Token fetch from http request 
-          Log "@debug Token fetch from http request : %" fetchToken
+     token = Call magicLinkService sendMail email userData.context
+     //  Magic link has been sent
+     Log "@debug Mail has been sent with token %" token
+     // Mail Sending acknowledgement
+     acknowledgement = RRF "acknowledgement.ftlh" emailObj
+     // Fetch token
+     fetchToken = httpRequest.params.token
+     // Token fetch from http request 
+     Log "@debug Token fetch from http request : %" fetchToken
