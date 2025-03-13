@@ -225,8 +225,8 @@
 			"id": "callNode-c490a50a-e973-47b6-b3bc-3d87f28dde38",
 			"type": "callNode",
 			"position": {
-				"x": 1530,
-				"y": 280
+				"x": 1488.509479694236,
+				"y": 263.06509375274953
 			},
 			"data": {
 				"id": "callNode-c490a50a-e973-47b6-b3bc-3d87f28dde38",
@@ -259,14 +259,15 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": false,
+			"dragging": false
 		},
 		{
 			"id": "assignmentNode-3ab97777-6674-43ab-9c84-25fc120d53d9",
 			"type": "assignmentNode",
 			"position": {
-				"x": 1530,
-				"y": 280
+				"x": 1664.6325046656416,
+				"y": 416.3259952903666
 			},
 			"data": {
 				"id": "assignmentNode-3ab97777-6674-43ab-9c84-25fc120d53d9",
@@ -275,7 +276,7 @@
 					"x": 1780,
 					"y": 280
 				},
-				"previousNodeId": "logNode-0567ce9f-7db9-47e2-ab8c-8b675d100a57",
+				"previousNodeId": "callNode-c490a50a-e973-47b6-b3bc-3d87f28dde38",
 				"agamaData": {
 					"assignments": [
 						{
@@ -297,7 +298,8 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true,
+			"dragging": false
 		},
 		{
 			"id": "whenNode-a2d0130b-8d2c-4d5b-affd-c95d32528803",
@@ -339,7 +341,7 @@
 				"width": 110,
 				"height": 60
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "logNode-99a5c46d-4af1-4dbc-9001-651654a38bea",
@@ -917,11 +919,29 @@
 				"fillOpacity": 0.7
 			},
 			"id": "xy-edge__callNode-32100d59-50bf-4756-a38d-9b43aaa733aasource_callNode-32100d59-50bf-4756-a38d-9b43aaa733aa-logNode-0f19e0d2-9c86-43e9-b295-2a9a8b247883target_logNode-0f19e0d2-9c86-43e9-b295-2a9a8b247883"
+		},
+		{
+			"source": "callNode-c490a50a-e973-47b6-b3bc-3d87f28dde38",
+			"sourceHandle": "source_callNode-c490a50a-e973-47b6-b3bc-3d87f28dde38",
+			"target": "assignmentNode-3ab97777-6674-43ab-9c84-25fc120d53d9",
+			"targetHandle": "target_assignmentNode-3ab97777-6674-43ab-9c84-25fc120d53d9",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"id": "xy-edge__callNode-c490a50a-e973-47b6-b3bc-3d87f28dde38source_callNode-c490a50a-e973-47b6-b3bc-3d87f28dde38-assignmentNode-3ab97777-6674-43ab-9c84-25fc120d53d9target_assignmentNode-3ab97777-6674-43ab-9c84-25fc120d53d9"
 		}
 	],
 	"viewport": {
-		"x": -1719.31272171295,
-		"y": -85.32960971774423,
+		"x": -1463.31272171295,
+		"y": -131.32960971774423,
 		"zoom": 1.1809926614295323
 	}
 }
