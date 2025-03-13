@@ -12,9 +12,8 @@ Repeat 3 times max
      magicLinkService = Call org.gluu.agama.jans.MagicLinkService#getInstance 
      // Get user details using magic link service
      userData = Call magicLinkService getUserEntity email
-     // 1. Logic to determine if user email is already registered 2. Initialize location, timezone info from UI to user-data
+     // 1. Logic to determine if user email is already registered 
      emailUnknown = userData.empty
-     userData.context = { location: uiInput.location, timeZone: uiInput.zone, device: uiInput.device }
      When emailUnknown is true
           // User not found 
           Log "@info User not found with mail %" email
