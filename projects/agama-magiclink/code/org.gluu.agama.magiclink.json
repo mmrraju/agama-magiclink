@@ -282,11 +282,6 @@
 							"variableTypeCheck": true,
 							"assignmentExpression": "userData.empty",
 							"assignedVariableName": "emailUnknown"
-						},
-						{
-							"variableTypeCheck": true,
-							"assignmentExpression": "{ location: uiInput.location, timeZone: uiInput.zone, device: uiInput.device }",
-							"assignedVariableName": "userData.context"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -295,14 +290,14 @@
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": "1. Logic to determine if user email is already registered 2. Initialize location, timezone info from UI to user-data"
+					"comment": "1. Logic to determine if user email is already registered "
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "whenNode-a2d0130b-8d2c-4d5b-affd-c95d32528803",
@@ -419,7 +414,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -944,8 +939,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2387,
-		"y": 19,
-		"zoom": 1
+		"x": -1619.31272171295,
+		"y": -157.32960971774423,
+		"zoom": 1.1809926614295323
 	}
 }
