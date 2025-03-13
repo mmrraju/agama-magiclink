@@ -23,7 +23,7 @@ Repeat 3 times max
      // User with same email already exists
      Log "@info User with e-mail % is known" email
      // Call magic link service to send mail
-     token = Call magicLinkService sendMail email userData.context
+     token | E = Call magicLinkService sendMail email userData.context
      //  Magic link has been sent
      Log "@debug Mail has been sent with token %" token
      // Mail Sending acknowledgement
