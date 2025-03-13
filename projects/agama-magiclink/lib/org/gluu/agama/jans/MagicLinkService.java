@@ -8,7 +8,7 @@ import org.gluu.agama.jans.service.Service;
 public abstract class MagicLinkService {
     public abstract Map<String, String> getUserEntity(String email);
 
-    public abstract String sendMail(String to, ContextData context) throws Exception;
+    public abstract String sendMail(String to);
 
     public abstract boolean verifyMagicLink(String token);
 
@@ -16,3 +16,4 @@ public abstract class MagicLinkService {
         return Service.getInstance();
     }
 }
+
