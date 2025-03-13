@@ -56,7 +56,7 @@ public class Service extends MagicLinkService{
 
     public String generateMagicLink(String token) throws Exception {
 
-        return HOST + "auth/magic-link?token=" + token;
+        return HOST + "jans-auth/magic-link?token=" + token;
     }
 
     public boolean verifyMagicLink(String token) {
