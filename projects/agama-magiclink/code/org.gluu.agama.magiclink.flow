@@ -24,6 +24,8 @@ Repeat 3 times max
      Log "@info User with e-mail % is known" email
      // Call magic link service to send mail
      token | E = Call magicLinkService sendMail email userData.context
+     // if no error
+     When email is null
      //  Magic link has been sent
      Log "@debug Mail has been sent with token %" token
      // Mail Sending acknowledgement
