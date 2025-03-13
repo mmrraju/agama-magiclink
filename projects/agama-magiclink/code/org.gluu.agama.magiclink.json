@@ -400,7 +400,7 @@
 					"javaClassName": "",
 					"javaMethodName": "sendMail",
 					"javaVariableName": "magicLinkService",
-					"exceptionVariableField": "",
+					"exceptionVariableField": "E",
 					"callType": "Call method on instance",
 					"arguments": [
 						"email",
@@ -420,7 +420,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -633,7 +633,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		}
 	],
 	"edges": [
@@ -942,8 +942,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2692,
-		"y": 68,
+		"x": -1957,
+		"y": -15,
 		"zoom": 1
 	}
 }
