@@ -8,7 +8,7 @@ class EmailTemplate {
     
     private static DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMMM dd, YYYY, HH:mma (O)");
 
-    static String get(String magicLink, ContextData context) {
+    static String get(String magicLink) {
 
         """
 <div style="width: 640px; font-size: 18px; font-family: 'Roboto', sans-serif; font-weight: 300">
@@ -35,12 +35,6 @@ class EmailTemplate {
         The Gluu Team
         <br><br>
         </p>
-    </div>
-    <div style="padding: 12px; background-color: #ecf0f5; font-size: 16px">
-        <p style="color: #48596b; font-weight: 500">When and where this happened<p>
-        <p><span style="color: #48596b; font-weight: 500">Date:</span><br>${computeDateTime(context.timeZone)}</p>
-        <p><span style="color: #48596b; font-weight: 500">${(context.device == null || context.device.length() == 0) ? '' : ('Device:</span><br>' + context.device)}</p>
-        <p><span style="color: #48596b; font-weight: 500">${(context.location || context.location.length() == 0) ? '' : ('Approximate Location:</span><br>' + context.location)}</p>
     </div>
 </div>
         """
