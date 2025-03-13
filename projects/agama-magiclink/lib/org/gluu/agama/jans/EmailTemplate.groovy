@@ -19,7 +19,7 @@ class EmailTemplate {
         <p>
         <b>Hi,</b>
         <br><br>
-        Clink on the link to verfy and access to the IDP.
+        Clink on the link to verfy and access to the IDP. ${magicLink}
         </p>
         <div style="display: flex; justify-content: center">
             <div style="background-color: #b6f6da; color: #0ca65d; font-size: 14px; font-weight: 400; letter-spacing: 6px" align="center">
