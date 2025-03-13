@@ -123,7 +123,7 @@ public class Service extends MagicLinkService{
         return new HashMap<>();     
     }
 
-    public String sendMail(String to, ContextData context) {
+    public String sendMail(String to, ContextData context) throws Exception {
         SmtpConfiguration smtpConfiguration = getSmtpConfiguration();
 
         String token = generateToken(to);
@@ -139,9 +139,11 @@ public class Service extends MagicLinkService{
         if (mailService.sendMailSigned(from, from, to, null, subject, textBody, htmlBody)) {
             logger.debug("E-mail has been delivered to {} with code {}", to, token);
             return token;
+        }else{
+            throw new EntryNotFoundException("Email sending failed. Please re-try");
         }
         logger.debug("E-mail delivery failed, check jans-auth logs");
-        return null;
+        return null;      
     }
 
     private SmtpConfiguration getSmtpConfiguration() {
