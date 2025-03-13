@@ -123,7 +123,7 @@ public class Service extends MagicLinkService{
         return new HashMap<>();     
     }
 
-    public String sendMail(String to, ContextData context) throws Exception {
+    public String sendMail(String to) throws Exception {
         SmtpConfiguration smtpConfiguration = getSmtpConfiguration();
 
         String token = generateToken(to);
@@ -132,7 +132,7 @@ public class Service extends MagicLinkService{
         String from = smtpConfiguration.getFromEmailAddress();
         String subject = String.format(SUBJECT_TEMPLATE);
         String textBody = String.format(MSG_TEMPLATE_TEXT, magicLink);
-        String htmlBody = EmailTemplate.get(magicLink, context);
+        String htmlBody = EmailTemplate.get(magicLink);
 
         MailService mailService = CdiUtil.bean(MailService.class);
 
