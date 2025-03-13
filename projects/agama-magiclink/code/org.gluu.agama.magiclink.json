@@ -427,8 +427,8 @@
 			"id": "logNode-0f19e0d2-9c86-43e9-b295-2a9a8b247883",
 			"type": "logNode",
 			"position": {
-				"x": 3047.831600676895,
-				"y": 11.471421684254324
+				"x": 3039.831600676895,
+				"y": 311.4714216842543
 			},
 			"data": {
 				"id": "logNode-0f19e0d2-9c86-43e9-b295-2a9a8b247883",
@@ -449,7 +449,7 @@
 					"hasComment": true,
 					"comment": " Magic link has been sent"
 				},
-				"branching": "continue"
+				"branching": "success"
 			},
 			"measured": {
 				"width": 170,
@@ -534,8 +534,8 @@
 			"id": "rrfNode-c3305e73-095c-45ba-8ad4-cc73b8967783",
 			"type": "rrfNode",
 			"position": {
-				"x": 3387.831600676895,
-				"y": 67.47142168425432
+				"x": 3264.831600676895,
+				"y": 289.4714216842543
 			},
 			"data": {
 				"id": "rrfNode-c3305e73-095c-45ba-8ad4-cc73b8967783",
@@ -563,15 +563,15 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
 			"id": "assignmentNode-d1a51650-ca01-4857-bad8-79d15e4ea98d",
 			"type": "assignmentNode",
 			"position": {
-				"x": 3298.831600676895,
-				"y": 207.47142168425432
+				"x": 3524.831600676895,
+				"y": 293.4714216842543
 			},
 			"data": {
 				"id": "assignmentNode-d1a51650-ca01-4857-bad8-79d15e4ea98d",
@@ -602,7 +602,8 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": false,
+			"dragging": false
 		},
 		{
 			"id": "whenNode-465f08dd-1d19-49ac-b87d-b726dd22f70f",
@@ -644,14 +645,14 @@
 				"width": 110,
 				"height": 60
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "logNode-19a0c0b5-9695-40dd-81a0-51ac9d2770f2",
 			"type": "logNode",
 			"position": {
-				"x": 3548.831600676895,
-				"y": 207.47142168425432
+				"x": 3795.009335051895,
+				"y": 275.4714216842543
 			},
 			"data": {
 				"id": "logNode-19a0c0b5-9695-40dd-81a0-51ac9d2770f2",
@@ -677,7 +678,8 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": false,
+			"dragging": false
 		}
 	],
 	"edges": [
@@ -985,11 +987,11 @@
 			"sourceHandle": "source_callNode-32100d59-50bf-4756-a38d-9b43aaa733aa"
 		},
 		{
-			"id": "whenNode-465f08dd-1d19-49ac-b87d-b726dd22f70f-logNode-0f19e0d2-9c86-43e9-b295-2a9a8b247883",
-			"type": "default",
 			"source": "whenNode-465f08dd-1d19-49ac-b87d-b726dd22f70f",
+			"sourceHandle": "source_whenNode-465f08dd-1d19-49ac-b87d-b726dd22f70f_success",
 			"target": "logNode-0f19e0d2-9c86-43e9-b295-2a9a8b247883",
-			"label": "continue",
+			"targetHandle": "target_logNode-0f19e0d2-9c86-43e9-b295-2a9a8b247883",
+			"label": "Condition met",
 			"labelBgPadding": [
 				8,
 				4
@@ -1000,12 +1002,11 @@
 				"color": "#ffffff",
 				"fillOpacity": 0.7
 			},
-			"sourceHandle": "source_whenNode-465f08dd-1d19-49ac-b87d-b726dd22f70f_continue",
-			"targetHandle": "target_logNode-0f19e0d2-9c86-43e9-b295-2a9a8b247883"
+			"id": "xy-edge__whenNode-465f08dd-1d19-49ac-b87d-b726dd22f70fsource_whenNode-465f08dd-1d19-49ac-b87d-b726dd22f70f_success-logNode-0f19e0d2-9c86-43e9-b295-2a9a8b247883target_logNode-0f19e0d2-9c86-43e9-b295-2a9a8b247883"
 		}
 	],
 	"viewport": {
-		"x": -2350,
+		"x": -2396.177734375,
 		"y": 55,
 		"zoom": 1
 	}
