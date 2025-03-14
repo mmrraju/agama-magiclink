@@ -286,8 +286,8 @@
 					"conditionInputField": "",
 					"conditions": [
 						{
-							"variable": "userData.inum",
-							"operator": "is",
+							"variable": "userData.empty",
+							"operator": "is not",
 							"dataValue": "true",
 							"combinator": "none"
 						}
@@ -305,7 +305,7 @@
 				"width": 110,
 				"height": 60
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -1166,7 +1166,7 @@
 		}
 	],
 	"viewport": {
-		"x": -1415,
+		"x": -1414,
 		"y": -51,
 		"zoom": 1
 	}
