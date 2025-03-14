@@ -14,7 +14,7 @@ Repeat 3 times max
      userData = Call magicLinkService getUserEntity email
      // 1. Logic to determine if user email is already registered 
      emailUnknown = userData.empty
-     When userData.empty is true
+     When userData is null
           // User not found 
           Log "@info User not found with mail %" email
           // Error message user not found
