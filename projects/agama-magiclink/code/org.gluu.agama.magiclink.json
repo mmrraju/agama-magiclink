@@ -436,7 +436,7 @@
 				"agamaData": {
 					"assignments": [],
 					"nodeIcon": "ph:globe-simple",
-					"templatePath": "page.ftlh",
+					"templatePath": "acknowledgement.ftlh",
 					"asssignedVariableName": "data",
 					"nodeColor": "",
 					"titleColor": "",
@@ -444,14 +444,17 @@
 					"displayName": "",
 					"hasComment": true,
 					"comment": "Fetching magic-link data",
-					"arguments": "obj true"
+					"arguments": [
+						"obj",
+						"true"
+					]
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 124
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -939,8 +942,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2618,
-		"y": -13,
+		"x": -2027,
+		"y": -84,
 		"zoom": 1
 	}
 }
