@@ -16,7 +16,8 @@
         ],
         "noDirectLaunch": [],
         "configs": {
-            "org.gluu.agama.magiclink": {}
+            "org.gluu.agama.magiclink": {},
+            "": {}
         },
         "name": "agama-magiclink"
     }
