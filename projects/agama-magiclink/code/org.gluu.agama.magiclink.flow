@@ -7,7 +7,7 @@ Repeat 3 times max
      // Retrieve user email address from UI
      formDataInput = RRF "mailform.ftlh" emailObj
      // Assign user email input to a variable
-     email = uiInput.mail
+     email = formDataInput.mail
      // Create an instance of MagicLinkService
      magicLinkService = Call org.gluu.agama.jans.MagicLinkService#getInstance 
      // Get user details using magic link service
