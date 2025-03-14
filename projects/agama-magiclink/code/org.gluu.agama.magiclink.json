@@ -298,7 +298,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -322,9 +322,9 @@
 					"conditionInputField": "",
 					"conditions": [
 						{
-							"variable": "userData.empty",
+							"variable": "userData",
 							"operator": "is",
-							"dataValue": "true",
+							"dataValue": "null",
 							"combinator": "none"
 						}
 					],
@@ -341,7 +341,7 @@
 				"width": 110,
 				"height": 60
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "logNode-99a5c46d-4af1-4dbc-9001-651654a38bea",
@@ -940,8 +940,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1463.31272171295,
-		"y": -131.32960971774423,
-		"zoom": 1.1809926614295323
+		"x": -1395,
+		"y": -77,
+		"zoom": 1
 	}
 }
