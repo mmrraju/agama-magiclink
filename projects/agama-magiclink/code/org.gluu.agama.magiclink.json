@@ -322,7 +322,7 @@
 					"conditionInputField": "",
 					"conditions": [
 						{
-							"variable": "userData",
+							"variable": "userData.inum",
 							"operator": "is",
 							"dataValue": "true",
 							"combinator": "none"
@@ -341,7 +341,7 @@
 				"width": 110,
 				"height": 60
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -785,7 +785,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		}
 	],
 	"edges": [
@@ -1168,8 +1168,8 @@
 		}
 	],
 	"viewport": {
-		"x": -3367,
-		"y": -47,
+		"x": -1588,
+		"y": -15,
 		"zoom": 1
 	}
 }
