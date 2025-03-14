@@ -25,6 +25,8 @@ Repeat 3 times max
           obj = {}
           // Fetching magic-link data
           data = RRF "page.ftlh" obj true
+          // Token was
+          Log "@info Token was : %" data.token
           // Fetch token
           fetchToken = httpRequest.params.token
           // Token fetch from http request 
