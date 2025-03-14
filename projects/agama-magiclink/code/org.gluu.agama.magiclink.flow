@@ -24,7 +24,7 @@ Repeat 3 times max
           // Empty object assign
           obj = {}
           // Fetching magic-link data
-          data = RRF "page.ftlh" obj
+          data = RRF "page.ftlh" obj true
           // Fetch token
           fetchToken = httpRequest.params.token
           // Token fetch from http request 
