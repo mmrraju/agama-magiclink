@@ -20,7 +20,7 @@
 	  <div class="separator">
 	  </div>
 	  <p class="message">
-		Please check your mail to complete your user authentication.
+		Please check your mail to complete your user authentication. once you click on the link you can safely close this window.
 		<br>
 	  </p>
 	</div>
