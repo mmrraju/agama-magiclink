@@ -454,7 +454,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -636,6 +636,46 @@
 			},
 			"selected": false,
 			"dragging": false
+		},
+		{
+			"id": "callNode-a09d8d83-500a-46f6-814f-280629dfaee1",
+			"type": "callNode",
+			"position": {
+				"x": 3230.621865973542,
+				"y": 217.26090901695517
+			},
+			"data": {
+				"id": "callNode-a09d8d83-500a-46f6-814f-280629dfaee1",
+				"type": "callNode",
+				"position": {
+					"x": 3230.621865973542,
+					"y": 217.26090901695517
+				},
+				"previousNodeId": "logNode-e5e75c46-7c57-4068-b28f-7b330d8fcb94",
+				"agamaData": {
+					"javaClassName": "",
+					"javaMethodName": "verifyMagicLink",
+					"javaVariableName": "magicLinkService",
+					"exceptionVariableField": "",
+					"callType": "Call method on instance",
+					"arguments": [
+						"data.token"
+					],
+					"nodeIcon": "material-symbols:code",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Token verification ",
+					"asssignedVariableName": "isVerify"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			},
+			"selected": true
 		}
 	],
 	"edges": [
@@ -939,11 +979,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_rrfNode-c3305e73-095c-45ba-8ad4-cc73b8967783"
+		},
+		{
+			"id": "logNode-e5e75c46-7c57-4068-b28f-7b330d8fcb94-callNode-a09d8d83-500a-46f6-814f-280629dfaee1",
+			"type": "default",
+			"source": "logNode-e5e75c46-7c57-4068-b28f-7b330d8fcb94",
+			"target": "callNode-a09d8d83-500a-46f6-814f-280629dfaee1",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_logNode-e5e75c46-7c57-4068-b28f-7b330d8fcb94"
 		}
 	],
 	"viewport": {
-		"x": -2027,
-		"y": -84,
+		"x": -2826,
+		"y": -56,
 		"zoom": 1
 	}
 }
