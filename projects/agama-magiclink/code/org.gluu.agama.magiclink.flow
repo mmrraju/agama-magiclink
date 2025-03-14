@@ -24,7 +24,7 @@ Repeat 3 times max
           // Empty object assign
           obj = {}
           // Fetching magic-link data
-          data = RRF "page.ftlh" obj true
+          data = RRF "acknowledgement.ftlh" obj true
           // Token was
           Log "@info Token was : %" data.token
      Otherwise
