@@ -27,6 +27,8 @@ Repeat 3 times max
           data = RRF "acknowledgement.ftlh" obj true
           // Token was
           Log "@info Token was : %" data.token
+          // Token verification 
+          isVerify = Call magicLinkService verifyMagicLink data.token
      Otherwise
           // User not found
           Log "@info User not found with mail %" email
