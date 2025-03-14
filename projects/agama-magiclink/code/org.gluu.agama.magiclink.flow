@@ -29,6 +29,12 @@ Repeat 3 times max
           Log "@info Token was : %" data.token
           // Token verification 
           isVerify = Call magicLinkService verifyMagicLink data.token
+          // Is Token verified 
+          When isVerify is true
+               // Token verification success
+               Log "@info Token verification successful"
+               // Flow finished successfully
+               Finish userData.uid
      Otherwise
           // User not found
           Log "@info User not found with mail %" email
