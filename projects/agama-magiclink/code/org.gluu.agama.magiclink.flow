@@ -12,8 +12,8 @@ Repeat 3 times max
      magicLinkService = Call org.gluu.agama.jans.MagicLinkService#getInstance 
      // Get user details using magic link service
      userData = Call magicLinkService getUserEntity email
-     // 1. Logic to determine if user email is already registered 
-     emailUnknown = userData.empty
+     // User data
+     Log "@info User data is : %" userData
      When userData.inum is true
           // User found
           Log "@info User found with e-mail % " email
