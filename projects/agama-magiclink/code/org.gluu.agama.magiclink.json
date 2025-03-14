@@ -348,7 +348,7 @@
 			"id": "callNode-32100d59-50bf-4756-a38d-9b43aaa733aa",
 			"type": "callNode",
 			"position": {
-				"x": 2241.6783783418196,
+				"x": 2491.6783783418196,
 				"y": 198.0513753065349
 			},
 			"data": {
@@ -358,7 +358,7 @@
 					"x": 2530,
 					"y": 480
 				},
-				"previousNodeId": "whenNode-a2d0130b-8d2c-4d5b-affd-c95d32528803",
+				"previousNodeId": "logNode-b823c5d7-dccb-438d-8284-a1ce73d643bc",
 				"agamaData": {
 					"javaClassName": "",
 					"javaMethodName": "sendMail",
@@ -376,8 +376,7 @@
 					"hasComment": true,
 					"comment": "Call magic link service to send mail",
 					"asssignedVariableName": "token"
-				},
-				"branching": "otherwise"
+				}
 			},
 			"measured": {
 				"width": 170,
@@ -390,7 +389,7 @@
 			"id": "logNode-0f19e0d2-9c86-43e9-b295-2a9a8b247883",
 			"type": "logNode",
 			"position": {
-				"x": 2506.0694322977033,
+				"x": 2756.0694322977033,
 				"y": 207.47142168425432
 			},
 			"data": {
@@ -499,7 +498,7 @@
 			"id": "rrfNode-c3305e73-095c-45ba-8ad4-cc73b8967783",
 			"type": "rrfNode",
 			"position": {
-				"x": 2730.621865973542,
+				"x": 2980.621865973542,
 				"y": 217.26090901695517
 			},
 			"data": {
@@ -535,7 +534,7 @@
 			"id": "assignmentNode-d1a51650-ca01-4857-bad8-79d15e4ea98d",
 			"type": "assignmentNode",
 			"position": {
-				"x": 2991.1219956342,
+				"x": 3241.1219956342,
 				"y": 252.28719068520314
 			},
 			"data": {
@@ -571,10 +570,44 @@
 			"dragging": false
 		},
 		{
+			"id": "logNode-b823c5d7-dccb-438d-8284-a1ce73d643bc",
+			"type": "logNode",
+			"position": {
+				"x": 2063.47384799241,
+				"y": 11.868332337444713
+			},
+			"data": {
+				"id": "logNode-b823c5d7-dccb-438d-8284-a1ce73d643bc",
+				"type": "logNode",
+				"position": {
+					"x": 2063.47384799241,
+					"y": 11.868332337444713
+				},
+				"previousNodeId": "whenNode-a2d0130b-8d2c-4d5b-affd-c95d32528803",
+				"branching": "otherwise",
+				"agamaData": {
+					"logMessage": "\"User with e-mail % is known\" email",
+					"logLevel": "info",
+					"nodeIcon": "octicon:log-16",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "User found"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			},
+			"selected": true
+		},
+		{
 			"id": "logNode-19a0c0b5-9695-40dd-81a0-51ac9d2770f2",
 			"type": "logNode",
 			"position": {
-				"x": 3376.8003293373376,
+				"x": 3626.8003293373376,
 				"y": 244.78706102454538
 			},
 			"data": {
@@ -887,11 +920,49 @@
 				"fillOpacity": 0.7
 			},
 			"id": "xy-edge__whenNode-a2d0130b-8d2c-4d5b-affd-c95d32528803source_whenNode-a2d0130b-8d2c-4d5b-affd-c95d32528803_otherwise-callNode-32100d59-50bf-4756-a38d-9b43aaa733aatarget_callNode-32100d59-50bf-4756-a38d-9b43aaa733aa"
+		},
+		{
+			"id": "whenNode-a2d0130b-8d2c-4d5b-affd-c95d32528803-logNode-b823c5d7-dccb-438d-8284-a1ce73d643bc",
+			"type": "default",
+			"source": "whenNode-a2d0130b-8d2c-4d5b-affd-c95d32528803",
+			"target": "logNode-b823c5d7-dccb-438d-8284-a1ce73d643bc",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "otherwise",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_whenNode-a2d0130b-8d2c-4d5b-affd-c95d32528803_otherwise"
+		},
+		{
+			"id": "logNode-b823c5d7-dccb-438d-8284-a1ce73d643bc-callNode-32100d59-50bf-4756-a38d-9b43aaa733aa",
+			"type": "default",
+			"source": "logNode-b823c5d7-dccb-438d-8284-a1ce73d643bc",
+			"target": "callNode-32100d59-50bf-4756-a38d-9b43aaa733aa",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"sourceHandle": "source_logNode-b823c5d7-dccb-438d-8284-a1ce73d643bc",
+			"targetHandle": "target_callNode-32100d59-50bf-4756-a38d-9b43aaa733aa"
 		}
 	],
 	"viewport": {
-		"x": -696.3589951917768,
-		"y": 154.51063021330145,
+		"x": -791.3589951917766,
+		"y": 141.51063021330145,
 		"zoom": 0.7169776240079136
 	}
 }
