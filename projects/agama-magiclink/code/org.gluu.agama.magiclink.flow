@@ -14,7 +14,7 @@ Repeat 3 times max
      userData = Call magicLinkService getUserEntity email
      // User data
      Log "@info User data is : %" userData
-     When userData.inum is true
+     When userData.empty is not true
           // User found
           Log "@info User found with e-mail % " email
           // Call magic link service to send mail
