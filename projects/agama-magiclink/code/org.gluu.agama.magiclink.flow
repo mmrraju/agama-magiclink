@@ -21,8 +21,10 @@ Repeat 3 times max
           token = Call magicLinkService sendMail email
           //  Magic link has been sent
           Log "@debug Mail has been sent with token %" token
-          // Mail Sending acknowledgement
-          acknowledgement = RRF "acknowledgement.ftlh" emailObj
+          // Empty object assign
+          obj = {}
+          // Fetching magic-link data
+          data = RRF "page.ftlh" obj
           // Fetch token
           fetchToken = httpRequest.params.token
           // Token fetch from http request 
