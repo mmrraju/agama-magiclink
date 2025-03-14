@@ -20,6 +20,8 @@ Repeat 3 times max
           // Error message user not found
           emailObj.errorMessage = "User Not found"
      Otherwise
+          // User found
+          Log "@info User with e-mail % is known" email
           // Call magic link service to send mail
           token = Call magicLinkService sendMail email
           //  Magic link has been sent
