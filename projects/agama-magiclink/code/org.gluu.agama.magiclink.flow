@@ -27,10 +27,6 @@ Repeat 3 times max
           data = RRF "page.ftlh" obj true
           // Token was
           Log "@info Token was : %" data.token
-          // Fetch token
-          fetchToken = httpRequest.params.token
-          // Token fetch from http request 
-          Log "@debug Token fetch from http request : %" fetchToken
      Otherwise
           // User not found
           Log "@info User not found with mail %" email
