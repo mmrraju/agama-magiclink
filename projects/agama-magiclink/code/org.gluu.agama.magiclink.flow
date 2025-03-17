@@ -37,6 +37,12 @@ Repeat 3 times max
                Log "@info Token verification successful"
                // Flow finished successfully
                Finish userData.uid
+          Otherwise
+               // Token verification failed 
+               Log "@info Token verification failed"
+               // Token verification failed
+               it_ogquw = {success:false, error: "Token verification failed"}
+               Finish it_ogquw
      Otherwise
           // User not found
           Log "@info User not found with mail %" email
@@ -45,5 +51,5 @@ Repeat 3 times max
 // Max attempts Reached
 Log "@info Max attempts reached"
 // Flow finish with an error
-it_udglt = {success:false, error: "Max attempts reached"}
-Finish it_udglt
+it_afwli = {success:false, error: "Max attempts reached"}
+Finish it_afwli
