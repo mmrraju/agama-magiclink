@@ -35,7 +35,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "assignmentNode-1b70c468-dbe3-4fa8-b30b-10a8f623e684",
@@ -209,7 +209,8 @@
 					"callType": "Call static method",
 					"arguments": [
 						"conf.hostName",
-						"conf.secretKey"
+						"conf.secretKey",
+						"conf.tokenExpiration"
 					],
 					"nodeIcon": "material-symbols:code",
 					"nodeColor": "",
@@ -351,8 +352,8 @@
 			"id": "assignmentNode-22e422ef-0654-48a7-94fc-271040034145",
 			"type": "assignmentNode",
 			"position": {
-				"x": 1981.183971677735,
-				"y": 28.103052102468652
+				"x": 2182.183971677735,
+				"y": 35.10305210246865
 			},
 			"data": {
 				"id": "assignmentNode-22e422ef-0654-48a7-94fc-271040034145",
@@ -383,7 +384,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -574,8 +575,8 @@
 			"id": "logNode-95859be8-fcd3-4983-b24f-d31153c694cd",
 			"type": "logNode",
 			"position": {
-				"x": 1736.7629463431376,
-				"y": 34.18423099905118
+				"x": 1923.7629463431376,
+				"y": 38.18423099905118
 			},
 			"data": {
 				"id": "logNode-95859be8-fcd3-4983-b24f-d31153c694cd",
@@ -1170,8 +1171,8 @@
 		}
 	],
 	"viewport": {
-		"x": 222,
-		"y": 64,
+		"x": -1075,
+		"y": 78,
 		"zoom": 1
 	}
 }
