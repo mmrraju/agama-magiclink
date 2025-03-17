@@ -21,7 +21,7 @@
 					"basepath": "",
 					"configParams": "{\n  \"hostName\": \"https://<jans-hostname>\",\n  \"jwtToken\":\"xxxxxx\"\n}",
 					"nodeIcon": "material-symbols:line-start-square",
-					"timeout": "",
+					"timeout": "360",
 					"inputs": "",
 					"configs": "conf",
 					"flowname": "org.gluu.agama.magiclink",
