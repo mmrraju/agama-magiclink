@@ -19,11 +19,11 @@
 				"agamaData": {
 					"isTopLevelFlow": true,
 					"basepath": "",
-					"configParams": "{}",
+					"configParams": "{\n  \"hostName\":\"\"\n}",
 					"nodeIcon": "material-symbols:line-start-square",
 					"timeout": "",
 					"inputs": "",
-					"configs": "",
+					"configs": "conf",
 					"flowname": "org.gluu.agama.magiclink",
 					"displayName": "org.gluu.agama.magiclink",
 					"creationDate": "17/02/2025",
@@ -34,7 +34,8 @@
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "assignmentNode-1b70c468-dbe3-4fa8-b30b-10a8f623e684",
@@ -305,7 +306,7 @@
 				"width": 110,
 				"height": 60
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
