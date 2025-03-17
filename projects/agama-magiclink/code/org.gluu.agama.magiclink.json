@@ -19,7 +19,7 @@
 				"agamaData": {
 					"isTopLevelFlow": true,
 					"basepath": "",
-					"configParams": "{\n  \"hostName\": \"<your-hostname>\",\n  \"jwtToken\": \"xxxxxx\"\n}",
+					"configParams": "{\n  \"hostName\": \"<your-hostname>\",\n  \"secretKey\": \"xxxxxx\",\n  \"tokenExpiration\":10\n}",
 					"nodeIcon": "material-symbols:line-start-square",
 					"timeout": "360",
 					"inputs": "",
@@ -35,7 +35,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "assignmentNode-1b70c468-dbe3-4fa8-b30b-10a8f623e684",
@@ -225,7 +225,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -1170,8 +1170,8 @@
 		}
 	],
 	"viewport": {
-		"x": -557,
-		"y": 19,
+		"x": 222,
+		"y": 64,
 		"zoom": 1
 	}
 }
