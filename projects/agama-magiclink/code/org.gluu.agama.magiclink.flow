@@ -1,5 +1,6 @@
 Flow org.gluu.agama.magiclink
      Basepath ""
+     Configs conf
 // Create and initialize variable to receive email input
 emailObj = {errorMessage: ""}
 // Iterate x times max
