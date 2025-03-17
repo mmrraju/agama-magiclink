@@ -101,7 +101,9 @@ public class Service extends MagicLinkService{
         logger.debug("There is {} local account for {}", local ? "a" : "no", email);
     
         if (local) {
-              String inum = getSingleValuedAttr(user, INUM_ATTR);
+
+            String uid = getSingleValuedAttr(user, UID);
+            String inum = getSingleValuedAttr(user, INUM_ATTR);
             String name = getSingleValuedAttr(user, GIVEN_NAME); user != null;
             logger 
     
@@ -158,7 +160,7 @@ public class Service extends MagicLinkService{
     private String getSingleValuedAttr(User user, String attribute) {
 
         Object value = null;
-        if (attribute.equals(UID)) {
+        if (attribute.equals(this.UID)) {
             //user.getAttribute("uid", true, false) always returns null :(
             value = user.getUserId();
         } else {
