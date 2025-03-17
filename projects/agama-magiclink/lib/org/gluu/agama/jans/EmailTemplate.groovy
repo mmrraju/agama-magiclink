@@ -11,11 +11,11 @@ class EmailTemplate {
     static String get(String magicLink) {
 
         """
-<div style="width: 640px; font-size: 12px; font-family: 'Roboto', sans-serif; font-weight: 300">
+<div style="width: 100%; font-size: 12px; font-family: 'Roboto', sans-serif; font-weight: 300">
     <div style="background-color: #b6f6da; border-bottom: 1px solid #0ca65d">
         <img src="https://gluu.org/wp-content/uploads/elementor/thumbs/Logo-qbe8p4qgmufqni0becxda6fnfib6krzb65uihag270.png" alt="Gluu Inc." />
     </div>
-    <div style="padding: 12px; border-bottom: 1px solid #ccc;">
+    <div style="padding: 12px; font-size: 10px; border-bottom: 1px solid #ccc;">
         <p>
         <b>Hi,</b>
         <br><br>
