@@ -23,7 +23,6 @@ import com.nimbusds.jwt.*;
 import org.gluu.agama.jans.EmailTemplate;
 import org.gluu.agama.jans.MagicLinkService;
 import org.gluu.agama.jans.model.ContextData;
-import static org.gluu.agama.smtp.jans.Attrs.*;
 
 public class Service extends MagicLinkService{
 
