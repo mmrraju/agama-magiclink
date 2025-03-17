@@ -18,7 +18,8 @@
         "configs": {
             "org.gluu.agama.magiclink": {
                 "hostName": "<your-hostname>",
-                "jwtToken": "xxxxxx"
+                "secretKey": "xxxxxx",
+                "tokenExpiration": 10
             },
             "": {}
         },
