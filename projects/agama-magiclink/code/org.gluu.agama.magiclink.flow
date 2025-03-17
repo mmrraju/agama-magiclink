@@ -45,5 +45,5 @@ Repeat 3 times max
 // Max attempts Reached
 Log "@info Max attempts reached"
 // Flow finish with an error
-it_fxpqf = {success:false, error: ""Max attempts reached""}
-Finish it_fxpqf
+it_jqcew = {success:false, error: "Max attempts reached"}
+Finish it_jqcew
