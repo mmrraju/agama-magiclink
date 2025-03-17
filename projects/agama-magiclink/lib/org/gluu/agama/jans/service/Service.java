@@ -86,9 +86,6 @@ public class Service extends MagicLinkService{
                         .issueTime(new Date())
                         .build()
         );
-        user != null;
-        logger user != null;
-        logger
         signedJWT.sign(signer);
         String token = signedJWT.serialize();
 
@@ -105,7 +102,7 @@ public class Service extends MagicLinkService{
             String uid = getSingleValuedAttr(user, UID);
             String inum = getSingleValuedAttr(user, INUM_ATTR);
             String name = getSingleValuedAttr(user, GIVEN_NAME); 
-            
+
             if (name == null) {
                 name = getSingleValuedAttr(user, DISPLAY_NAME);
                 if (name == null && email != null && email.contains("@")) {
