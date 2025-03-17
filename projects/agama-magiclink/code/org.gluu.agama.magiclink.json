@@ -19,7 +19,7 @@
 				"agamaData": {
 					"isTopLevelFlow": true,
 					"basepath": "",
-					"configParams": "{\n  \"hostName\":\"\"\n}",
+					"configParams": "{\n  \"hostName\": \"https://<jans-hostname>\",\n  \"jwtToken\":\"xxxxxx\"\n}",
 					"nodeIcon": "material-symbols:line-start-square",
 					"timeout": "",
 					"inputs": "",
