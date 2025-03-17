@@ -16,7 +16,9 @@
         ],
         "noDirectLaunch": [],
         "configs": {
-            "org.gluu.agama.magiclink": {},
+            "org.gluu.agama.magiclink": {
+                "hostName": ""
+            },
             "": {}
         },
         "name": "agama-magiclink"
