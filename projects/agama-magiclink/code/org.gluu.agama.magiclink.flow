@@ -42,3 +42,8 @@ Repeat 3 times max
           Log "@info User not found with mail %" email
           // Error message user not found
           emailObj.errorMessage = "User Not found"
+// Max attempts Reached
+Log "@info Max attempts reached"
+// Flow finish with an error
+it_igasl = {success:false, error: ""Max attempts reached""}
+Finish it_igasl
