@@ -847,7 +847,7 @@
 					"hasComment": true,
 					"comment": "Flow finish with an error",
 					"flowfilename": "",
-					"returnVariable": "\"Max attempts reached\"",
+					"returnVariable": "Max attempts reached",
 					"finishMode": "withFailure",
 					"nodeIcon": "material-symbols:line-end-square-rounded"
 				}
