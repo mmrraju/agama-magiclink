@@ -104,9 +104,8 @@ public class Service extends MagicLinkService{
 
             String uid = getSingleValuedAttr(user, UID);
             String inum = getSingleValuedAttr(user, INUM_ATTR);
-            String name = getSingleValuedAttr(user, GIVEN_NAME); user != null;
-            logger 
-    
+            String name = getSingleValuedAttr(user, GIVEN_NAME); 
+            
             if (name == null) {
                 name = getSingleValuedAttr(user, DISPLAY_NAME);
                 if (name == null && email != null && email.contains("@")) {
