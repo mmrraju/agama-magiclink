@@ -1,5 +1,6 @@
 Flow org.gluu.agama.magiclink
      Basepath ""
+     Timeout 360 seconds
      Configs conf
 // Create and initialize variable to receive email input
 emailObj = {errorMessage: ""}
