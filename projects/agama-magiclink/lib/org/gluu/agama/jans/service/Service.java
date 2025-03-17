@@ -28,34 +28,35 @@ public class Service extends MagicLinkService{
 
     private static final Logger logger = LoggerFactory.getLogger(MagicLinkService.class);
 
-    private static final String HOST = "https://mmrraju-set-werewolf.gluu.info/";
+    private String HOST;
+    private String SECRET_KEY;
+    private Integer TOKEN_EXPIRATION;
     private static final String MAIL = "mail";
     private static final String UID = "uid";
     private static final String DISPLAY_NAME = "displayName";
     private static final String GIVEN_NAME = "givenName";
-    private static final String PASSWORD = "userPassword";
     private static final String INUM_ATTR = "inum";
-    private static final String EXT_ATTR = "jansExtUid";
-    private static final String USER_STATUS = "jansStatus";
-    private static final String EXT_UID_PREFIX = "github:";
     private static final SecureRandom RAND = new SecureRandom();
-    private static final String SECRET_KEY = "vfFYsdCNEreUsHKyl38b1wbIlf7PSxRm431ypSh6T3U=";
+    // private static final String SECRET_KEY = "vfFYsdCNEreUsHKyl38b1wbIlf7PSxRm431ypSh6T3U=";
     private static final String SUBJECT_TEMPLATE = "MagicLink for authentication";
     private static final String MSG_TEMPLATE_TEXT = "%s is the magiclink to complete your verification";
 
     private static Service INSTANCE = null;
     private Service(){}
 
-    public static synchronized Service getInstance(){
-        if (INSTANCE== null) {
+    public static synchronized Service getInstance(String hostName, String secretKey, Integer tokenExpiration) {
+        if (INSTANCE == null) {
             INSTANCE = new Service();
+            INSTANCE.HOST = hostName;
+            INSTANCE.SECRET_KEY = secretKey;
+            INSTANCE.TOKEN_EXPIRATION = tokenExpiration;
         }
         return INSTANCE;
     }
 
     public String generateMagicLink(String token) throws Exception {
 
-        return HOST + "jans-auth/fl/callback?token=" + token;
+        return "https://"+ HOST + "/jans-auth/fl/callback?token=" + token;
     }
 
     public boolean verifyMagicLink(String token) {
@@ -74,7 +75,7 @@ public class Service extends MagicLinkService{
     }    
 
     public String generateToken(String email){
-        long expirationTime = System.currentTimeMillis() + (10 * 60 * 1000); // 10 minutes expiry
+        long expirationTime = System.currentTimeMillis() + (this.TOKEN_EXPIRATION * 60 * 1000);
 
         JWSSigner signer = new MACSigner(SECRET_KEY.getBytes());
         SignedJWT signedJWT = new SignedJWT(
@@ -85,7 +86,9 @@ public class Service extends MagicLinkService{
                         .issueTime(new Date())
                         .build()
         );
-
+        user != null;
+        logger user != null;
+        logger
         signedJWT.sign(signer);
         String token = signedJWT.serialize();
 
@@ -98,9 +101,9 @@ public class Service extends MagicLinkService{
         logger.debug("There is {} local account for {}", local ? "a" : "no", email);
     
         if (local) {
-            String uid = getSingleValuedAttr(user, UID);
-            String inum = getSingleValuedAttr(user, INUM_ATTR);
-            String name = getSingleValuedAttr(user, GIVEN_NAME);
+              String inum = getSingleValuedAttr(user, INUM_ATTR);
+            String name = getSingleValuedAttr(user, GIVEN_NAME); user != null;
+            logger 
     
             if (name == null) {
                 name = getSingleValuedAttr(user, DISPLAY_NAME);
