@@ -17,7 +17,7 @@
         "noDirectLaunch": [],
         "configs": {
             "org.gluu.agama.magiclink": {
-                "hostName": "https://<jans-hostname>",
+                "hostName": "<your-hostname>",
                 "jwtToken": "xxxxxx"
             },
             "": {}
