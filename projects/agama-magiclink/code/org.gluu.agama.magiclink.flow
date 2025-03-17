@@ -11,7 +11,7 @@ Repeat 3 times max
      // Assign user email input to a variable
      email = formDataInput.mail
      // Create an instance of MagicLinkService
-     magicLinkService = Call org.gluu.agama.jans.MagicLinkService#getInstance conf.hostName conf.secretKey
+     magicLinkService = Call org.gluu.agama.jans.MagicLinkService#getInstance conf.hostName conf.secretKey conf.tokenExpiration
      // Get user details using magic link service
      userData = Call magicLinkService getUserEntity email
      // User data
