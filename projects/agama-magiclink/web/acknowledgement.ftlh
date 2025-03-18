@@ -49,7 +49,7 @@
 	  color: #000;
 	}
 	.registration-container {
-	  max-width: 600px;
+	  max-width: 100%;
 	  margin: auto;
 	  border: 1px solid #28a745;
 	  padding: 20px;
