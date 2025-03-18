@@ -11,15 +11,15 @@ class EmailTemplate {
     static String get(String magicLink) {
 
         """
-<div style="width: 100%; font-size: 12px; font-family: 'Roboto', sans-serif; font-weight: 300">
+<div style="width: 100%; font-size: 14px; font-family: 'Roboto', sans-serif; font-weight: 300">
     <div style="background-color: #b6f6da; border-bottom: 1px solid #0ca65d">
         <img src="https://gluu.org/wp-content/uploads/elementor/thumbs/Logo-qbe8p4qgmufqni0becxda6fnfib6krzb65uihag270.png" alt="Gluu Inc." />
     </div>
-    <div style="padding: 11px; font-size: 10px; border-bottom: 1px solid #ccc;">
+    <div style="padding: 10px; font-size: 12px; border-bottom: 1px solid #ccc;">
         <p>
         <b>Hi,</b>
         <br><br>
-        Clink on the link to verfy and access to the IDP. ${magicLink}
+        Click on the link to verfy and access to the IDP. ${magicLink}
         </p>
         <p style="font-size: 12px">
         If you did not make this request, you can safely ignore this email.
