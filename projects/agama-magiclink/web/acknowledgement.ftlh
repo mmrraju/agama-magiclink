@@ -15,12 +15,12 @@
 	  <div class="flex">
 		<img src="https://gluu.org/wp-content/uploads/2020/12/logo.png" id="inh1m">
 	  </div>
-	  <h4>Magic link has Sent Successfully at your mail.
+	  <h4>Magic link has sent successfully at your mail.
 	  </h4>
 	  <div class="separator">
 	  </div>
 	  <p class="message">
-		 Once you click on the link you can safely close this window.
+		Once you click on the link you can safely close this window.
 		<br>
 	  </p>
 	</div>
