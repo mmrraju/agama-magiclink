@@ -218,7 +218,7 @@
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": "Create an instance of MagicLinkService",
+					"comment": "Create an instance of MagicLinkService with configurable parameters.",
 					"asssignedVariableName": "magicLinkService"
 				}
 			},
@@ -226,7 +226,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -924,7 +924,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		}
 	],
 	"edges": [
@@ -1383,8 +1383,8 @@
 		}
 	],
 	"viewport": {
-		"x": -3066,
-		"y": 238,
+		"x": -357,
+		"y": -4,
 		"zoom": 1
 	}
 }
