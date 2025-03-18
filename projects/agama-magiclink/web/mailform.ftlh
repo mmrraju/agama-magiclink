@@ -24,8 +24,8 @@
 		  </p>
 		</div>
 		[#if errorMessage?has_content]
-			<div id="ig86l" align="center" class="fs-6 text-red-600 mb-4">${errorMessage}
-			</div>
+		<div id="ig86l" align="center" class="fs-6 text-red-600 mb-4">${errorMessage}
+		</div>
 		[/#if]
 		<form method="post" class="my-8">
 		  <div class="relative mb-2">
