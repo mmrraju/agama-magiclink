@@ -226,7 +226,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -738,7 +738,7 @@
 				},
 				"previousNodeId": "callNode-c490a50a-e973-47b6-b3bc-3d87f28dde38",
 				"agamaData": {
-					"logMessage": "\"User data is : %\" userData",
+					"logMessage": "\"User data is : \" ",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
@@ -753,7 +753,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -1383,8 +1383,8 @@
 		}
 	],
 	"viewport": {
-		"x": -357,
-		"y": -4,
+		"x": -747,
+		"y": -21,
 		"zoom": 1
 	}
 }
