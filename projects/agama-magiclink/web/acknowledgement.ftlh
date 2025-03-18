@@ -15,7 +15,7 @@
 	  <div class="flex">
 		<img src="https://gluu.org/wp-content/uploads/2020/12/logo.png" id="inh1m">
 	  </div>
-	  <h4>Link has been sent at your mail.
+	  <h4>Link has been sent at your Mail
 	  </h4>
 	  <div class="separator">
 	  </div>
