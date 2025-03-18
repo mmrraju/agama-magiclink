@@ -738,7 +738,7 @@
 				},
 				"previousNodeId": "callNode-c490a50a-e973-47b6-b3bc-3d87f28dde38",
 				"agamaData": {
-					"logMessage": "\"User data is : \" ",
+					"logMessage": "\"User data is :\"",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
